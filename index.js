@@ -2,7 +2,7 @@
 const express = require('express')
 const hbs = require('hbs')
 const path = require('path')
-const getWeatherInfo = require('./controller');
+const getWeatherInfo = require('./src/controller');
 
 //port 
 const port = process.env.PORT || 8000
