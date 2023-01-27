@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    {{>headLinks}}
+</head>
+<body>
+    {{>navbar}}
+    {{!-- Main Content Begin --}}
+    <div class="container-fluid main_content">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto row pt-2 pb-2 align-items-center">
+
+                <div class="temp_content">
+                    <form class="temp_form">
+                        <input type="text" id="cityName" name='city_name' placeholder="Enter Your City Name" autocomplete="off" maxlength="50">
+                        <input type="submit" value="Search" id="submitBtn">
+                    </form>
+                </div>
+
+                <div class="tempInformation mx-auto">
+                    <div class="top_layer">
+                        <p id="day">{{date.day}}</p>
+                        <p id="today_date">{{date.date}}</p>
+                    </div>
+                    <div class="main_layer">
+                        <p id="city_name">
+                            {{city}}
+                        </p>
+                        <div class="middle_layer {{hideClass}}">
+                            <p id="temp">
+                                <span>{{temp}}</span><sup>o</sup>C
+                            </p>
+                            <figure id="temp_status">
+                                <img src={{icon}} alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{!-- Main Content End --}}
+    {{>footer}}
+</body>
+</html>

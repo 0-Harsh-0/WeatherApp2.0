@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    {{>headLinks}}
+</head>
+
+<body>
+
+    {{>navbar}}
+
+    {{!-- Main Content Begin --}}
+    <div class="container-fluid main_content">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row aboutContainer">
+                    {{!-- Left Side --}}
+                    <div class="col-md-7 col-12 main_content_left ps-5">
+                        <p>Welcome to weather app</p>
+                        <h1>
+                            I am a <span>Mern stack developer</span> and a freelancer.
+                        </h1>
+                        <a href="https://github.com/0-Harsh-0" target="_blank">
+                            <button>
+                                Github
+                            </button>
+                        </a>
+                    </div>
+
+                    {{!-- Right Side --}}
+                    <div class="col-md-5 col-12 main_content_right align-items-center pe-5 mt-0">
+                        <figure class="img_me">
+                            <img src="images/me-min.jpg" alt="">
+                        </figure>
+                    </div>
+
+                  
+                  
+
+                </div>
+            </div>
+        </div>
+    </div>
+    {{!-- Main Content End --}}
+
+    {{>footer}}
+</body>
+
+</html>

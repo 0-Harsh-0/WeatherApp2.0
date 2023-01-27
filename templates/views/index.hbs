@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    {{>headLinks}}
+</head>
+
+<body>
+
+    {{>navbar}}
+
+    {{!-- Main Content Begin --}}
+    <div class="container-fluid main_content">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    {{!-- Left Side --}}
+                    <div class="col-md-8 col-12 main_content_left">
+                        <p>Welcome to weather app</p>
+                        <h1>
+                            Get The Latest <span>Weather</span> Info of Your City
+                        </h1>
+                        <a href="/weather">
+                            <button>
+                                Check Now
+                            </button>
+                        </a>
+                    </div>
+                    {{!-- Right Side --}}
+                    <div class="col-md-4 col-12 main_content_right align-items-center">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <figure>
+                                        <img src="images/bg1.png" class="w-100" alt="...">
+                                    </figure>
+                                </div>
+                                <div class="carousel-item">
+                                    <figure>
+                                        <img src="images/bg2.png" class="w-100" alt="...">
+                                    </figure>
+                                </div>
+                                <div class="carousel-item">
+                                    <figure>
+                                        <img src="images/bg3.png" class="w-100" alt="...">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    {{!-- Main Content End --}}
+
+    {{>footer}}
+</body>
+
+</html>
