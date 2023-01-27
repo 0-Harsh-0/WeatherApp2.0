@@ -2,7 +2,7 @@
 const express = require('express')
 const hbs = require('hbs')
 const path = require('path')
-const getWeatherInfo = require('./controller');
+const getWeatherInfo = require('./src/controller');
 
 //port 
 const port = process.env.PORT || 8000
@@ -12,11 +12,11 @@ const app = express()
 
 //getting the paths
 // public Folder Path
-const staticFilesPath = path.join(__dirname,'../public')
+const staticFilesPath = path.join(__dirname,'./public')
 // View Folder Path
-const viewsPath = path.join(__dirname,'../templates/views')
+const viewsPath = path.join(__dirname,'./templates/views')
 // Partials Folder Path
-const partialsPath = path.join(__dirname,'../templates/partials')
+const partialsPath = path.join(__dirname,'./templates/partials')
 
 
 
