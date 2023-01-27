@@ -5,7 +5,7 @@ const path = require('path')
 const getWeatherInfo = require('./controller');
 
 //port 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 8000
 
 //creating express app
 const app = express()
@@ -62,4 +62,3 @@ app.listen(port,()=>{
 })
 
 
-module.exports = app
